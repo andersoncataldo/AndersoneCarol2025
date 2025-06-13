@@ -1,0 +1,63 @@
+<!-- vestimenta.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traje dos Convidados - Carol & Anderson</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .traje-section {
+      display: none;
+      margin-top: 1rem;
+    }
+    .traje-section img {
+      max-width: 250px;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function mostrarTraje(id) {
+      document.querySelectorAll('.traje-section').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Traje dos Convidados</h1>
+  </header>
+  <main>
+    <p>Escolha uma das opções abaixo para ver os detalhes:</p>
+    <button onclick="mostrarTraje('convidado-masculino')">👔 Traje Convidado Masculino</button>
+    <button onclick="mostrarTraje('convidado-feminino')">👗 Traje Convidado Feminino</button>
+    <button onclick="mostrarTraje('padrinho')">🤵 Traje Padrinho</button>
+    <button onclick="mostrarTraje('madrinha')">👰‍♀️ Traje Madrinha</button>
+
+    <section id="convidado-masculino" class="traje-section">
+      <h2>Traje Convidado Masculino</h2>
+      <img src="https://via.placeholder.com/250x300?text=Convidado+Masculino" alt="Traje Convidado Masculino">
+      <p>Terno escuro com camisa clara e sapato social. Gravata opcional.</p>
+    </section>
+
+    <section id="convidado-feminino" class="traje-section">
+      <h2>Traje Convidado Feminino</h2>
+      <img src="https://via.placeholder.com/250x300?text=Convidado+Feminino" alt="Traje Convidado Feminino">
+      <p>Vestido midi ou longo em tons claros, elegante, evitando branco.</p>
+    </section>
+
+    <section id="padrinho" class="traje-section">
+      <h2>Traje Padrinho</h2>
+      <img src="https://via.placeholder.com/250x300?text=Padrinho+Masculino" alt="Traje Padrinho">
+      <p>Terno azul marinho com gravata prata e camisa branca.</p>
+    </section>
+
+    <section id="madrinha" class="traje-section">
+      <h2>Traje Madrinha</h2>
+      <img src="https://via.placeholder.com/250x300?text=Padrinho+Feminino" alt="Traje Madrinha">
+      <p>Vestido longo em tom rosé ou marsala, conforme paleta informada.</p>
+    </section>
+  </main>
+<a class="floating-button" href="index.html" title="Voltar para Início">🏠</a>
+</body>
+</html>
